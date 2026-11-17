@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geometry and Trigonometry Formulas — Math Formula Notes</title>
+  <meta name="description" content="Pythagorean theorem, distance and midpoint, area and volume, SOHCAHTOA, and the laws of sines and cosines, with worked examples.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/geometry-trig.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html">Algebra</a>
+        <a href="geometry-trig.html" aria-current="page">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html">Calculus &amp; Stats</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Geometry and trigonometry formulas</h1>
+    <p class="lede">These identities cover right triangles, coordinate geometry, common area and volume formulas, and the two main laws for general triangles.</p>
+    <ul class="toc">
+      <li><a href="#pythagoras">Pythagorean theorem</a></li>
+      <li><a href="#distance">Distance and midpoint</a></li>
+      <li><a href="#area-volume">Area and volume</a></li>
+      <li><a href="#sohcahtoa">SOHCAHTOA</a></li>
+      <li><a href="#laws">Laws of sines and cosines</a></li>
+    </ul>
+
+    <section class="section" id="pythagoras">
+      <h2>Pythagorean theorem</h2>
+      <p>In a right triangle with legs $a$ and $b$ and hypotenuse $c$,</p>
+      <div class="formula">$$a^2 + b^2 = c^2.$$</div>
+      <p>The same relation finds a missing leg: $a = \sqrt{c^2 - b^2}$. A <a href="https://mathssolvergpt.com/en/calculator/pythagorean-theorem">math solver</a> can check the arithmetic when the side lengths are not obvious integers.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>A ladder is $17$ feet long and its base sits $8$ feet from a wall. How high does it reach, if the ground and wall meet at a right angle?</p>
+        <ol class="steps">
+          <li>The height $h$ satisfies $8^2 + h^2 = 17^2$.</li>
+          <li>$h^2 = 289 - 64 = 225$.</li>
+          <li>$h = 15$ feet. The sides $8$, $15$, and $17$ form a known Pythagorean triple, which confirms the result.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="distance">
+      <h2>Distance and midpoint</h2>
+      <p>On the coordinate plane, the distance between $A(x_1,y_1)$ and $B(x_2,y_2)$ is the length of the hypotenuse of the right triangle with legs $|x_2-x_1|$ and $|y_2-y_1|$:</p>
+      <div class="formula">$$d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$$</div>
+      <p>The midpoint of segment $AB$ is the average of the coordinates:</p>
+      <div class="formula">$$M = \left(\frac{x_1+x_2}{2},\ \frac{y_1+y_2}{2}\right)$$</div>
+      <p>To run the same steps on another pair of points, a <a href="https://mathssolvergpt.com/en/calculator/distance-formula">math solver</a> for the distance formula is a quick check.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Find the distance and midpoint between $(1,2)$ and $(4,6)$.</p>
+        <ol class="steps">
+          <li>$d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9+16} = \sqrt{25} = 5$.</li>
+          <li>$M = \left(\dfrac{1+4}{2},\ \dfrac{2+6}{2}\right) = (2.5,\ 4)$.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="area-volume">
+      <h2>Area and volume formulas</h2>
+      <div class="formula">
+        $$\begin{aligned}
+        \text{Triangle area} &= \tfrac{1}{2}bh \\
+        \text{Circle area} &= \pi r^2 \\
+        \text{Cylinder volume} &= \pi r^2 h \\
+        \text{Sphere volume} &= \tfrac{4}{3}\pi r^3
+        \end{aligned}$$
+      </div>
+      <p>Keep units consistent: if $r$ and $h$ are in centimeters, volume is in cubic centimeters. Leave answers in terms of $\pi$ unless a decimal approximation is requested.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>A cylinder has radius $3$ cm and height $10$ cm. Its volume is $\pi(3)^2(10) = 90\pi$ cubic centimeters, or about $282.7$ cm$^3$ if you use $\pi \approx 3.1416$.</p>
+      </div>
+    </section>
+
+    <section class="section" id="sohcahtoa">
+      <h2>SOHCAHTOA</h2>
+      <p>In a right triangle, if $\theta$ is an acute angle,</p>
+      <div class="formula">
+        $$\sin\theta = \frac{\text{opposite}}{\text{hypotenuse}},\quad
+        \cos\theta = \frac{\text{adjacent}}{\text{hypotenuse}},\quad
+        \tan\theta = \frac{\text{opposite}}{\text{adjacent}}.$$
+      </div>
+      <p>The mnemonic SOH-CAH-TOA is just a memory aid for those three ratios. More identity lists live on the <a href="https://mathssolvergpt.com/en/subjects/trigonometry">math solver</a> trigonometry pages.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>A right triangle has opposite side $5$, adjacent side $12$, and hypotenuse $13$ (since $5^2+12^2=13^2$). Then</p>
+        <div class="formula">$$\sin\theta = \frac{5}{13},\quad \cos\theta = \frac{12}{13},\quad \tan\theta = \frac{5}{12}.$$</div>
+      </div>
+    </section>
+
+    <section class="section" id="laws">
+      <h2>Law of sines and law of cosines</h2>
+      <p>For any triangle with sides $a$, $b$, $c$ opposite angles $A$, $B$, $C$,</p>
+      <div class="formula">$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$</div>
+      <p>The law of cosines generalizes the Pythagorean theorem to triangles that may not be right-angled:</p>
+      <div class="formula">$$c^2 = a^2 + b^2 - 2ab\cos C$$</div>
+      <p>Use the law of sines when you know a side and its opposite angle (ASA, AAS, or a well-behaved SSA case). Use the law of cosines for SAS or SSS.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>In triangle $ABC$, $a = 7$, $b = 10$, and $C = 60^\circ$. Find side $c$.</p>
+        <ol class="steps">
+          <li>$\cos 60^\circ = \dfrac{1}{2}$, so $c^2 = 7^2 + 10^2 - 2\cdot 7\cdot 10\cdot \dfrac{1}{2}$.</li>
+          <li>$c^2 = 49 + 100 - 70 = 79$.</li>
+          <li>$c = \sqrt{79}$. (That is about $8.89$ if a decimal is needed.)</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>

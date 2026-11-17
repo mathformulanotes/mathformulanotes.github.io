@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus and Statistics Formulas — Math Formula Notes</title>
+  <meta name="description" content="Power rule, basic limits, mean, median and mode, and simple probability, each with a worked example.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/calculus-stats.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html">Algebra</a>
+        <a href="geometry-trig.html">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html" aria-current="page">Calculus &amp; Stats</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Calculus and statistics formulas</h1>
+    <p class="lede">A short set of first tools: differentiating a power, evaluating a basic limit, summarizing a data list, and computing a simple probability.</p>
+    <ul class="toc">
+      <li><a href="#power-rule">Power rule</a></li>
+      <li><a href="#limits">Basic limits</a></li>
+      <li><a href="#mmm">Mean, median, and mode</a></li>
+      <li><a href="#probability">Simple probability</a></li>
+    </ul>
+
+    <section class="section" id="power-rule">
+      <h2>Power rule</h2>
+      <p>For a real number $n$, the derivative of $x^n$ is</p>
+      <div class="formula">$$\frac{d}{dx}\, x^n = n x^{n-1}.$$</div>
+      <p>Differentiation is linear, so constants factor out and sums are differentiated term by term: $\dfrac{d}{dx}\bigl(af(x)+bg(x)\bigr) = af'(x)+bg'(x)$. The derivative of a constant is $0$. To check a longer polynomial, a <a href="https://mathssolvergpt.com/en/calculator/derivative">math solver</a> can return the same term-by-term result.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Differentiate $f(x) = 3x^4 - 2x + 5$.</p>
+        <ol class="steps">
+          <li>$\dfrac{d}{dx}(3x^4) = 3\cdot 4x^3 = 12x^3$.</li>
+          <li>$\dfrac{d}{dx}(-2x) = -2$ and $\dfrac{d}{dx}(5) = 0$.</li>
+          <li>So $f'(x) = 12x^3 - 2$.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="limits">
+      <h2>Basic limits</h2>
+      <p>If a function is a ratio of polynomials and the numerator and denominator both approach $0$, factor or otherwise cancel the shared term before substituting. Direct substitution works when the simplified function is continuous at the point. A <a href="https://mathssolvergpt.com/en/calculator/limit">math solver</a> is useful for confirming the cancelled form and the final value.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Evaluate $\displaystyle\lim_{x \to 2}\dfrac{x^2-4}{x-2}$.</p>
+        <ol class="steps">
+          <li>Direct substitution gives $0/0$, which is indeterminate, not a value.</li>
+          <li>Factor the numerator: $x^2-4 = (x-2)(x+2)$.</li>
+          <li>For $x \neq 2$, the fraction simplifies to $x+2$.</li>
+          <li>Therefore the limit is $2+2 = 4$. The original function has a hole at $x=2$, but the limit still exists.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="mmm">
+      <h2>Mean, median, and mode</h2>
+      <p>For a finite list of numbers:</p>
+      <ul>
+        <li>The <strong>mean</strong> is the sum of the values divided by how many values there are.</li>
+        <li>The <strong>median</strong> is the middle value after the list is ordered. If there are two middle values, average them.</li>
+        <li>The <strong>mode</strong> is the value that appears most often. A list can have more than one mode, or no unique mode.</li>
+      </ul>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>For the data set $4,\ 7,\ 7,\ 9,\ 13$:</p>
+        <ol class="steps">
+          <li>Mean: $(4+7+7+9+13)/5 = 40/5 = 8$.</li>
+          <li>Median: the ordered list already has five entries, so the middle one is $7$.</li>
+          <li>Mode: $7$ appears twice, and every other value appears once, so the mode is $7$.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="probability">
+      <h2>Simple probability</h2>
+      <p>If every outcome in a finite sample space is equally likely, the probability of an event $A$ is</p>
+      <div class="formula">$$P(A) = \frac{\text{number of favorable outcomes}}{\text{number of possible outcomes}}.$$</div>
+      <p>If $A$ and $B$ are independent, $P(A\text{ and }B) = P(A)\,P(B)$. If they cannot happen together, $P(A\text{ or }B) = P(A)+P(B)$. For a two-event product like the example below, a <a href="https://mathssolvergpt.com/en/calculator/probability">math solver</a> can confirm the multiplied fractions.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>A fair coin and a fair six-sided die are rolled together. What is the probability of getting heads and a $6$?</p>
+        <ol class="steps">
+          <li>The coin and die do not affect each other, so the events are independent.</li>
+          <li>$P(\text{heads}) = 1/2$ and $P(6) = 1/6$.</li>
+          <li>$P(\text{heads and }6) = \dfrac{1}{2}\cdot\dfrac{1}{6} = \dfrac{1}{12}$.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>

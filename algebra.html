@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algebra Formulas — Math Formula Notes</title>
+  <meta name="description" content="Linear equations, the quadratic formula and discriminant, common factoring patterns, and exponent rules, each with a worked example.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/algebra.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html" aria-current="page">Algebra</a>
+        <a href="geometry-trig.html">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html">Calculus &amp; Stats</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Algebra formulas</h1>
+    <p class="lede">Start here when a problem asks you to solve for $x$, factor an expression, or simplify powers. Each section states the rule, then works one complete example.</p>
+    <ul class="toc">
+      <li><a href="#linear">Linear equations</a></li>
+      <li><a href="#quadratic">Quadratic formula</a></li>
+      <li><a href="#factoring">Factoring patterns</a></li>
+      <li><a href="#exponents">Exponent rules</a></li>
+    </ul>
+
+    <section class="section" id="linear">
+      <h2>Linear equations</h2>
+      <p>A linear equation in one variable can be rearranged so that all terms with $x$ are on one side and all constant terms are on the other. Adding the same number to both sides, or multiplying both sides by the same nonzero number, keeps the equation balanced.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Solve $3x - 7 = 2x + 5$.</p>
+        <ol class="steps">
+          <li>Subtract $2x$ from both sides: $x - 7 = 5$.</li>
+          <li>Add $7$ to both sides: $x = 12$.</li>
+          <li>Check: $3(12) - 7 = 29$ and $2(12) + 5 = 29$. Both sides match.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="quadratic">
+      <h2>Quadratic formula and discriminant</h2>
+      <p>Any quadratic equation $ax^2 + bx + c = 0$ with $a \neq 0$ has solutions</p>
+      <div class="formula">$$x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</div>
+      <p>The expression under the square root is the discriminant, $\Delta = b^2 - 4ac$. If $\Delta &gt; 0$, there are two distinct real roots. If $\Delta = 0$, there is one real root (a repeated root). If $\Delta &lt; 0$, there are no real roots; the two solutions are complex conjugates. A <a href="https://mathssolvergpt.com/en/calculator/quadratic">math solver</a> is handy when you want to confirm $a$, $b$, $c$ and the two resulting roots together.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Solve $x^2 - 5x + 6 = 0$. Here $a = 1$, $b = -5$, and $c = 6$.</p>
+        <ol class="steps">
+          <li>$\Delta = (-5)^2 - 4(1)(6) = 25 - 24 = 1$. Two real roots.</li>
+          <li>$x = \dfrac{5 \pm 1}{2}$.</li>
+          <li>So $x = 3$ or $x = 2$. In factored form the equation is $(x-3)(x-2) = 0$, which agrees.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="factoring">
+      <h2>Factoring patterns</h2>
+      <p>Recognizing a pattern often shortens the work. The most common identities are:</p>
+      <div class="formula">
+        $$\begin{aligned}
+        a^2 - b^2 &= (a-b)(a+b) \\
+        a^2 + 2ab + b^2 &= (a+b)^2 \\
+        a^2 - 2ab + b^2 &= (a-b)^2
+        \end{aligned}$$
+      </div>
+      <p>For a monic trinomial $x^2 + sx + p$, look for two numbers that add to $s$ and multiply to $p$. If a leading coefficient other than $1$ is in the way, try grouping or check the work with a <a href="https://mathssolvergpt.com/en/calculator/factoring">math solver</a> after you have a candidate factorization.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Factor $x^2 + 5x + 6$. The pair $2$ and $3$ adds to $5$ and multiplies to $6$, so</p>
+        <div class="formula">$$x^2 + 5x + 6 = (x+2)(x+3).$$</div>
+        <p>Expanding the right-hand side gives $x^2 + 5x + 6$, which matches. As a second check, $9^2 - 4^2 = 81 - 16 = 65$ and $(9-4)(9+4) = 5 \cdot 13 = 65$.</p>
+      </div>
+    </section>
+
+    <section class="section" id="exponents">
+      <h2>Exponent rules</h2>
+      <p>For a nonzero base $a$ and integers $m$ and $n$:</p>
+      <div class="formula">
+        $$\begin{aligned}
+        a^m \cdot a^n &= a^{m+n} \\
+        \frac{a^m}{a^n} &= a^{m-n} \\
+        (a^m)^n &= a^{mn} \\
+        a^0 &= 1 \\
+        a^{-n} &= \frac{1}{a^n}
+        \end{aligned}$$
+      </div>
+      <p>The same product and quotient rules hold for rational exponents once a principal root is defined. Use a <a href="https://mathssolvergpt.com/en/calculator/exponent">math solver</a> if a messy mix of negative and fractional powers needs a simplified form.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Simplify $\dfrac{2^5 \cdot 2^{-1}}{2^2}$.</p>
+        <ol class="steps">
+          <li>Combine the numerator: $2^5 \cdot 2^{-1} = 2^{4}$.</li>
+          <li>Divide: $2^{4}/2^{2} = 2^{2} = 4$.</li>
+          <li>In one line: $2^{5-1-2} = 2^{2} = 4$.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>
