@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fractions and Decimals — Math Formula Notes</title>
+  <meta name="description" content="Add, subtract, multiply, and divide fractions, convert mixed numbers, and move between fractions and decimals, with worked examples.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/fractions-decimals.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html">Algebra</a>
+        <a href="geometry-trig.html">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html">Calculus &amp; Stats</a>
+        <a href="fractions-decimals.html" aria-current="page">Fractions</a>
+        <a href="percentages.html">Percentages</a>
+        <a href="systems-of-equations.html">Systems</a>
+        <a href="inequalities.html">Inequalities</a>
+        <a href="logarithms.html">Logarithms</a>
+        <a href="polynomials.html">Polynomials</a>
+        <a href="circles.html">Circles</a>
+        <a href="statistics-probability.html">Statistics</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Fractions and decimals</h1>
+    <p class="lede">Most fraction work comes down to a common denominator, cancelling common factors, and knowing when a decimal terminates or repeats. The examples below use only those ideas.</p>
+    <ul class="toc">
+      <li><a href="#add-sub">Adding and subtracting</a></li>
+      <li><a href="#mul-div">Multiplying and dividing</a></li>
+      <li><a href="#mixed">Mixed numbers</a></li>
+      <li><a href="#convert">Fractions and decimals</a></li>
+    </ul>
+
+    <section class="section" id="add-sub">
+      <h2>Adding and subtracting fractions</h2>
+      <p>To add or subtract $\dfrac{a}{b}$ and $\dfrac{c}{d}$, rewrite both fractions with a common denominator (the least common multiple of $b$ and $d$ is the most compact choice), then add or subtract the numerators and keep that denominator. Reduce the result at the end.</p>
+      <div class="formula">$$\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}$$</div>
+      <p>A <a href="https://mathssolvergpt.com/en/calculator/fraction">math solver</a> is useful when the denominators are large and you want a check on the reduced form.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Compute $\dfrac{2}{3} + \dfrac{1}{4}$.</p>
+        <ol class="steps">
+          <li>The least common denominator of $3$ and $4$ is $12$.</li>
+          <li>$\dfrac{2}{3} = \dfrac{8}{12}$ and $\dfrac{1}{4} = \dfrac{3}{12}$.</li>
+          <li>Add: $\dfrac{8}{12} + \dfrac{3}{12} = \dfrac{11}{12}$, which is already in lowest terms.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="mul-div">
+      <h2>Multiplying and dividing fractions</h2>
+      <p>Multiply numerators together and denominators together, cancelling any common factor before you multiply if you like. Division is multiplication by the reciprocal:</p>
+      <div class="formula">$$\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd},\qquad \frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c} = \frac{ad}{bc}$$</div>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Simplify $\dfrac{3}{5} \times \dfrac{10}{9}$ and $\dfrac{3}{4} \div \dfrac{2}{5}$.</p>
+        <ol class="steps">
+          <li>$\dfrac{3}{5} \times \dfrac{10}{9} = \dfrac{3\cdot 10}{5\cdot 9}$. Cancel a factor of $5$: $\dfrac{3\cdot 2}{9} = \dfrac{6}{9} = \dfrac{2}{3}$.</li>
+          <li>$\dfrac{3}{4} \div \dfrac{2}{5} = \dfrac{3}{4} \times \dfrac{5}{2} = \dfrac{15}{8}$.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="mixed">
+      <h2>Mixed numbers</h2>
+      <p>A mixed number $n\dfrac{a}{b}$ means $n + \dfrac{a}{b}$. Convert it to an improper fraction before multiplying or dividing:</p>
+      <div class="formula">$$n\frac{a}{b} = \frac{nb + a}{b}$$</div>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>$3\dfrac{1}{2} = \dfrac{3\cdot 2 + 1}{2} = \dfrac{7}{2}$. Going the other way, $\dfrac{11}{4} = 2\dfrac{3}{4}$ because $11 = 2\cdot 4 + 3$.</p>
+      </div>
+    </section>
+
+    <section class="section" id="convert">
+      <h2>Fractions and decimals</h2>
+      <p>To write a fraction as a decimal, divide the numerator by the denominator. The decimal terminates if the reduced denominator’s prime factors are only $2$ and $5$; otherwise it eventually repeats. To write a terminating decimal as a fraction, count the decimal places and use the matching power of ten, then reduce. These conversions sit naturally alongside the fraction work on the <a href="https://mathssolvergpt.com/en/subjects/pre-algebra">math solver</a> pre-algebra pages.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>$0.375 = \dfrac{375}{1000}$. Divide numerator and denominator by $125$ to get $\dfrac{3}{8}$. In the other direction, $\dfrac{2}{5} = \dfrac{4}{10} = 0.4$.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>

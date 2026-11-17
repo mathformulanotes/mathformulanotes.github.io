@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circles — Math Formula Notes</title>
+  <meta name="description" content="Circumference and area of a circle, the standard equation of a circle, and arc length and sector area, each with a worked example.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/circles.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html">Algebra</a>
+        <a href="geometry-trig.html">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html">Calculus &amp; Stats</a>
+        <a href="fractions-decimals.html">Fractions</a>
+        <a href="percentages.html">Percentages</a>
+        <a href="systems-of-equations.html">Systems</a>
+        <a href="inequalities.html">Inequalities</a>
+        <a href="logarithms.html">Logarithms</a>
+        <a href="polynomials.html">Polynomials</a>
+        <a href="circles.html" aria-current="page">Circles</a>
+        <a href="statistics-probability.html">Statistics</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Circles</h1>
+    <p class="lede">A circle is the set of points at a fixed distance, the radius, from a center. The formulas below cover length and area, the coordinate equation, and the portion of a circle cut out by a central angle.</p>
+    <ul class="toc">
+      <li><a href="#length-area">Circumference and area</a></li>
+      <li><a href="#equation">Equation of a circle</a></li>
+      <li><a href="#arc">Arc length and sector area</a></li>
+    </ul>
+
+    <section class="section" id="length-area">
+      <h2>Circumference and area</h2>
+      <p>If the radius is $r$, the diameter is $2r$, the circumference (the distance around the circle) is $2\pi r$, and the area is $\pi r^2$. Leaving answers in terms of $\pi$ is exact; a decimal is only an approximation. A <a href="https://mathssolvergpt.com/en/calculator/circle">math solver</a> can switch between radius, diameter, circumference, and area when one of those four is given.</p>
+      <div class="formula">$$C = 2\pi r,\qquad A = \pi r^2.$$</div>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>A circle of radius $5$ cm has circumference $C=2\pi\cdot 5=10\pi$ cm and area $A=\pi\cdot 5^2=25\pi$ cm$^2$. If instead you are given a circumference of $14\pi$, then $2\pi r=14\pi$ so $r=7$, and the area is $49\pi$.</p>
+      </div>
+    </section>
+
+    <section class="section" id="equation">
+      <h2>Equation of a circle</h2>
+      <p>The circle with center $(h,k)$ and radius $r$ consists of the points $(x,y)$ that satisfy</p>
+      <div class="formula">$$(x-h)^2 + (y-k)^2 = r^2.$$</div>
+      <p>If the equation is given expanded, complete the square in $x$ and in $y$ to recover the center and radius. The same distance idea appears throughout the <a href="https://mathssolvergpt.com/en/subjects/geometry">math solver</a> geometry pages.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>The equation $(x-2)^2+(y+1)^2=9$ describes the circle of radius $3$ centered at $(2,-1)$, because $y+1=y-(-1)$ and $r=\sqrt{9}=3$. The point $(2,2)$ lies on the circle: the vertical distance from $(2,-1)$ to $(2,2)$ is $3$, which equals the radius.</p>
+      </div>
+    </section>
+
+    <section class="section" id="arc">
+      <h2>Arc length and sector area</h2>
+      <p>A central angle of $\theta$ degrees cuts a fraction $\theta/360$ of the full circle. The corresponding arc length and sector area are therefore</p>
+      <div class="formula">$$L = \frac{\theta}{360}\cdot 2\pi r,\qquad A_{\text{sector}} = \frac{\theta}{360}\cdot \pi r^2.$$</div>
+      <p>If the angle is given in radians as $\theta$, the same formulas become $L=\theta r$ and $A_{\text{sector}}=\tfrac{1}{2}r^2\theta$.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>A $60^\circ$ central angle in a circle of radius $6$ gives arc length $L=\dfrac{60}{360}\cdot 2\pi\cdot 6 = \dfrac{1}{6}\cdot 12\pi = 2\pi$ and sector area $A=\dfrac{60}{360}\cdot\pi\cdot 36 = 6\pi$. In radians the same angle is $\pi/3$, and $\bigl(\pi/3\bigr)\cdot 6=2\pi$ agrees.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>

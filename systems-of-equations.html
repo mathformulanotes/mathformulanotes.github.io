@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Systems of Equations — Math Formula Notes</title>
+  <meta name="description" content="Solve a system of two linear equations by substitution or elimination, and recognize when a system has no solution or infinitely many, with worked examples.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/systems-of-equations.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html">Algebra</a>
+        <a href="geometry-trig.html">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html">Calculus &amp; Stats</a>
+        <a href="fractions-decimals.html">Fractions</a>
+        <a href="percentages.html">Percentages</a>
+        <a href="systems-of-equations.html" aria-current="page">Systems</a>
+        <a href="inequalities.html">Inequalities</a>
+        <a href="logarithms.html">Logarithms</a>
+        <a href="polynomials.html">Polynomials</a>
+        <a href="circles.html">Circles</a>
+        <a href="statistics-probability.html">Statistics</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Systems of equations</h1>
+    <p class="lede">A system of two linear equations in two unknowns asks for the pair $(x,y)$ that sits on both lines at once. Substitution and elimination both work; the geometry tells you when there is one solution, none, or infinitely many.</p>
+    <ul class="toc">
+      <li><a href="#substitution">Substitution</a></li>
+      <li><a href="#elimination">Elimination</a></li>
+      <li><a href="#special">No solution or infinitely many</a></li>
+    </ul>
+
+    <section class="section" id="substitution">
+      <h2>Substitution</h2>
+      <p>Solve one equation for one variable, substitute that expression into the other equation, then solve the resulting one-variable equation and back-substitute. A <a href="https://mathssolvergpt.com/en/calculator/systems-of-equations">math solver</a> is a convenient check once you have a candidate pair.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Solve the system $x + y = 8$ and $2x - y = 1$.</p>
+        <ol class="steps">
+          <li>From the first equation, $y = 8 - x$.</li>
+          <li>Substitute into the second: $2x - (8-x) = 1$, so $2x - 8 + x = 1$, hence $3x = 9$ and $x = 3$.</li>
+          <li>Then $y = 8 - 3 = 5$. Check: $2(3)-5 = 1$, which matches the second equation. The solution is $(3,5)$.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="elimination">
+      <h2>Elimination</h2>
+      <p>Multiply one or both equations by constants so that one variable has opposite coefficients, then add the equations to cancel that variable. The same idea extends to three equations in three unknowns, and it is close in spirit to the one-variable work on a <a href="https://mathssolvergpt.com/en/calculator/equation">math solver</a> equation page.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Solve $3x + 2y = 16$ and $x - 2y = 0$ by elimination.</p>
+        <ol class="steps">
+          <li>The $y$-coefficients are already opposites. Add: $(3x+2y)+(x-2y)=16+0$, so $4x=16$ and $x=4$.</li>
+          <li>From $x-2y=0$, $4-2y=0$, so $y=2$.</li>
+          <li>Check in the first equation: $3(4)+2(2)=12+4=16$. The solution is $(4,2)$.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="special">
+      <h2>No solution or infinitely many</h2>
+      <p>After elimination or substitution, two things can go wrong in a useful way:</p>
+      <ul>
+        <li>You reach a false statement such as $0=3$. The lines are parallel and distinct, so there is no solution.</li>
+        <li>You reach a true statement such as $0=0$. The two equations describe the same line, so there are infinitely many solutions.</li>
+      </ul>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Consider $2x+3y=7$ and $4x+6y=10$. Doubling the first equation gives $4x+6y=14$, which contradicts $4x+6y=10$. The system has no solution. If the second equation had been $4x+6y=14$ instead, every point on the line $2x+3y=7$ would be a solution.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>

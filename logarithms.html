@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logarithms — Math Formula Notes</title>
+  <meta name="description" content="Definition of a logarithm, product, quotient and power rules, and the change-of-base formula, each with a worked example.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/logarithms.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html">Algebra</a>
+        <a href="geometry-trig.html">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html">Calculus &amp; Stats</a>
+        <a href="fractions-decimals.html">Fractions</a>
+        <a href="percentages.html">Percentages</a>
+        <a href="systems-of-equations.html">Systems</a>
+        <a href="inequalities.html">Inequalities</a>
+        <a href="logarithms.html" aria-current="page">Logarithms</a>
+        <a href="polynomials.html">Polynomials</a>
+        <a href="circles.html">Circles</a>
+        <a href="statistics-probability.html">Statistics</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Logarithms</h1>
+    <p class="lede">A logarithm names the exponent you need. Once that definition is in place, the product, quotient, and power rules are just the exponent laws written in a different order, and change of base lets you evaluate any log on an ordinary calculator.</p>
+    <ul class="toc">
+      <li><a href="#definition">Definition</a></li>
+      <li><a href="#rules">Product, quotient, and power rules</a></li>
+      <li><a href="#change">Change of base</a></li>
+    </ul>
+
+    <section class="section" id="definition">
+      <h2>Definition</h2>
+      <p>For $a&gt;0$, $a\neq 1$, and $x&gt;0$,</p>
+      <div class="formula">$$\log_a x = y \iff a^y = x.$$</div>
+      <p>In particular, $\log_a a = 1$, $\log_a 1 = 0$, and $\log_a(a^k)=k$. The common logarithm is $\log_{10}$, and the natural logarithm is $\ln = \log_e$. A <a href="https://mathssolvergpt.com/en/calculator/logarithm">math solver</a> is handy when the answer is not an obvious integer power.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>$\log_2 32 = 5$ because $2^5 = 32$. Likewise $\log_3 81 = 4$ because $3^4=81$, and $\log_5 \dfrac{1}{25} = -2$ because $5^{-2}=\dfrac{1}{25}$.</p>
+      </div>
+    </section>
+
+    <section class="section" id="rules">
+      <h2>Product, quotient, and power rules</h2>
+      <p>For positive $u$ and $v$ and a real number $k$,</p>
+      <div class="formula">
+        $$\begin{aligned}
+        \log_a(uv) &= \log_a u + \log_a v, \\
+        \log_a\!\left(\frac{u}{v}\right) &= \log_a u - \log_a v, \\
+        \log_a(u^k) &= k\log_a u.
+        \end{aligned}$$
+      </div>
+      <p>These identities are the usual first tools on the <a href="https://mathssolvergpt.com/en/subjects/precalculus">math solver</a> precalculus pages when a log expression needs to be expanded or condensed.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Expand $\log\left(\dfrac{x^2}{y}\right)$ for $x&gt;0$ and $y&gt;0$:</p>
+        <div class="formula">$$\log\left(\frac{x^2}{y}\right) = \log(x^2) - \log y = 2\log x - \log y.$$</div>
+        <p>In the other direction, $2\log_3 6 - \log_3 4 = \log_3(36/4) = \log_3 9 = 2$.</p>
+      </div>
+    </section>
+
+    <section class="section" id="change">
+      <h2>Change of base</h2>
+      <p>Any logarithm can be rewritten in a new base $c&gt;0$, $c\neq 1$:</p>
+      <div class="formula">$$\log_a x = \frac{\log_c x}{\log_c a} = \frac{\ln x}{\ln a} = \frac{\log x}{\log a}.$$</div>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>To evaluate $\log_2 10$ on a calculator that has only $\ln$ or $\log_{10}$, compute $\dfrac{\ln 10}{\ln 2}$ or $\dfrac{\log 10}{\log 2}$. Both equal the same number, a little more than $3.32$, which makes sense because $2^3=8$ and $2^4=16$, so $\log_2 10$ lies between $3$ and $4$.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inequalities — Math Formula Notes</title>
+  <meta name="description" content="Solve linear inequalities, compound inequalities, and absolute-value inequalities, including when to reverse the inequality sign, with worked examples.">
+  <link rel="canonical" href="https://mathformulanotes.github.io/inequalities.html">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Math Formula Notes</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="algebra.html">Algebra</a>
+        <a href="geometry-trig.html">Geometry &amp; Trig</a>
+        <a href="calculus-stats.html">Calculus &amp; Stats</a>
+        <a href="fractions-decimals.html">Fractions</a>
+        <a href="percentages.html">Percentages</a>
+        <a href="systems-of-equations.html">Systems</a>
+        <a href="inequalities.html" aria-current="page">Inequalities</a>
+        <a href="logarithms.html">Logarithms</a>
+        <a href="polynomials.html">Polynomials</a>
+        <a href="circles.html">Circles</a>
+        <a href="statistics-probability.html">Statistics</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+
+    <h1>Inequalities</h1>
+    <p class="lede">The same balancing moves that solve an equation also solve an inequality, with one extra rule: multiplying or dividing by a negative number reverses the inequality sign. The solution is often a ray or an interval rather than a single number.</p>
+    <ul class="toc">
+      <li><a href="#linear">Linear inequalities</a></li>
+      <li><a href="#compound">Compound inequalities</a></li>
+      <li><a href="#absolute">Absolute-value inequalities</a></li>
+    </ul>
+
+    <section class="section" id="linear">
+      <h2>Linear inequalities</h2>
+      <p>Add or subtract the same quantity on both sides freely. If you multiply or divide both sides by a positive number, the sign stays as it is. If you multiply or divide by a negative number, flip $<$ to $>$ (and $\leq$ to $\geq$), or the other way around. A <a href="https://mathssolvergpt.com/en/calculator/inequality">math solver</a> can graph the resulting ray once you have the endpoint and the direction.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Solve $3-2x &gt; 7$.</p>
+        <ol class="steps">
+          <li>Subtract $3$: $-2x &gt; 4$.</li>
+          <li>Divide by $-2$ and reverse the sign: $x &lt; -2$.</li>
+          <li>Check a point in the region, say $x=-3$: $3-2(-3)=9&gt;7$, true. A point outside, $x=0$: $3&gt;7$, false.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="compound">
+      <h2>Compound inequalities</h2>
+      <p>A compact statement such as $a &lt; x &lt; b$ means $x$ is greater than $a$ <em>and</em> less than $b$. You may add the same number to all three parts, or multiply all three parts by a positive number. Multiplying by a negative number reverses both signs and swaps the order so the smaller number is again on the left.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Solve $-1 \leq 2x+3 &lt; 9$. Subtract $3$ from all three parts: $-4 \leq 2x &lt; 6$. Divide by $2$: $-2 \leq x &lt; 3$. In interval notation the solution is $[-2,3)$.</p>
+      </div>
+    </section>
+
+    <section class="section" id="absolute">
+      <h2>Absolute-value inequalities</h2>
+      <p>For $k&gt;0$,</p>
+      <div class="formula">
+        $$\begin{aligned}
+        |x| &lt; k &\iff -k &lt; x &lt; k, \\
+        |x| &gt; k &\iff x &lt; -k \text{ or } x &gt; k.
+        \end{aligned}$$
+      </div>
+      <p>The same rewriting works after a translation: replace $x$ by $x-h$. Absolute-value equations and inequalities are collected on the <a href="https://mathssolvergpt.com/en/calculator/absolute-value">math solver</a> absolute-value page if you want a second check.</p>
+      <div class="example">
+        <div class="label">Worked example</div>
+        <p>Solve $|x-3| &lt; 5$ and $|x+1| \geq 4$.</p>
+        <ol class="steps">
+          <li>$|x-3|&lt;5$ becomes $-5&lt;x-3&lt;5$. Add $3$: $-2&lt;x&lt;8$.</li>
+          <li>$|x+1|\geq 4$ splits into $x+1\leq -4$ or $x+1\geq 4$, so $x\leq -5$ or $x\geq 3$.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Math Formula Notes — a short, free reference with worked examples.</p>
+      <p>Formulas are written for study and practice. Check arithmetic on unusual cases.</p>
+    </div>
+  </footer>
+</body>
+</html>
